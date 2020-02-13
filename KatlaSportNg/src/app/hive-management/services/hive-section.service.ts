@@ -21,7 +21,7 @@ export class HiveSectionService {
     return this.http.get<HiveSection>(`${this.url}${hiveSectionId}`);
   }
 
-  setHiveSectionStatus(hiveSectionId: number, deletedStatus: boolean): Observable<Object> {
-    return null;
+  setHiveSectionStatus(hiveSectionId: number, deletedStatus: boolean): Observable<HiveSection> {
+    return this.http.put<HiveSection>(`${this.url}${hiveSectionId}/status/${deletedStatus}`, null);
   }
 }
