@@ -130,7 +130,7 @@ namespace KatlaSport.DataAccess.Migrations
                 i => i.Id,
                 new StoreHive
                 {
-                    Id = 1,
+                    Id = 9022,
                     Name = "Gorka Minsk",
                     Address = "Minsk, Chaveza-30",
                     Code = "HIVE1",
@@ -141,7 +141,7 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHive
                 {
-                    Id = 2,
+                    Id = 9023,
                     Name = "Shabany Minsk",
                     Address = "Minsk, Zarechnaya-47",
                     Code = "HIVE2",
@@ -152,7 +152,7 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHive
                 {
-                    Id = 3,
+                    Id = 9024,
                     Name = "Tugolitsa Bobruisk",
                     Address = "Bobruisk, Vanceti-99",
                     Code = "HIVE3",
@@ -166,9 +166,9 @@ namespace KatlaSport.DataAccess.Migrations
                 i => i.Id,
                 new StoreHiveSection
                 {
-                    Id = 1,
+                    Id = 6062,
                     Name = "MSQ #1",
-                    StoreHiveId = 1,
+                    StoreHiveId = 9022,
                     Code = "HSE11",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -177,9 +177,9 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHiveSection
                 {
-                    Id = 2,
+                    Id = 6063,
                     Name = "MSQ #2",
-                    StoreHiveId = 1,
+                    StoreHiveId = 9022,
                     Code = "HSE12",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -188,9 +188,9 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHiveSection
                 {
-                    Id = 3,
+                    Id = 6064,
                     Name = "MSQ #3",
-                    StoreHiveId = 2,
+                    StoreHiveId = 9023,
                     Code = "HSE21",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -199,9 +199,9 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHiveSection
                 {
-                    Id = 4,
+                    Id = 6065,
                     Name = "MSQ #4",
-                    StoreHiveId = 2,
+                    StoreHiveId = 9023,
                     Code = "HSE22",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -210,9 +210,9 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHiveSection
                 {
-                    Id = 5,
+                    Id = 6066,
                     Name = "BBR #1",
-                    StoreHiveId = 3,
+                    StoreHiveId = 9024,
                     Code = "HSE31",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -221,9 +221,9 @@ namespace KatlaSport.DataAccess.Migrations
                 },
                 new StoreHiveSection
                 {
-                    Id = 6,
+                    Id = 6067,
                     Name = "BBR #2",
-                    StoreHiveId = 3,
+                    StoreHiveId = 9024,
                     Code = "HSE32",
                     IsDeleted = false,
                     CreatedBy = creatorId,
@@ -236,47 +236,47 @@ namespace KatlaSport.DataAccess.Migrations
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 1,
-                    StoreHiveSectionId = 1
+                    StoreHiveSectionId = 6062
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 1,
-                    StoreHiveSectionId = 3
+                    StoreHiveSectionId = 6064
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 1,
-                    StoreHiveSectionId = 5
+                    StoreHiveSectionId = 6066
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 2,
-                    StoreHiveSectionId = 1
+                    StoreHiveSectionId = 6062
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 2,
-                    StoreHiveSectionId = 3
+                    StoreHiveSectionId = 6064
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 2,
-                    StoreHiveSectionId = 5
+                    StoreHiveSectionId = 6066
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 3,
-                    StoreHiveSectionId = 2
+                    StoreHiveSectionId = 6063
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 3,
-                    StoreHiveSectionId = 4
+                    StoreHiveSectionId = 6065
                 },
                 new StoreHiveSectionCategory
                 {
                     ProductCategoryId = 3,
-                    StoreHiveSectionId = 6
+                    StoreHiveSectionId = 6067
                 });
 
             context.StoreItems.AddOrUpdate(
@@ -285,84 +285,84 @@ namespace KatlaSport.DataAccess.Migrations
                 {
                     Id = 1,
                     Quantity = 10,
-                    HiveSectionId = 1,
+                    HiveSectionId = 6062,
                     ProductId = 1
                 },
                 new StoreItem
                 {
                     Id = 2,
                     Quantity = 1,
-                    HiveSectionId = 3,
+                    HiveSectionId = 6064,
                     ProductId = 1
                 },
                 new StoreItem
                 {
                     Id = 3,
                     Quantity = 0,
-                    HiveSectionId = 5,
+                    HiveSectionId = 6066,
                     ProductId = 1
                 },
                 new StoreItem // #2
                 {
                     Id = 4,
                     Quantity = 5,
-                    HiveSectionId = 1,
+                    HiveSectionId = 6062,
                     ProductId = 2
                 },
                 new StoreItem
                 {
                     Id = 5,
                     Quantity = 100,
-                    HiveSectionId = 3,
+                    HiveSectionId = 6064,
                     ProductId = 2
                 },
                 new StoreItem
                 {
                     Id = 6,
                     Quantity = 10,
-                    HiveSectionId = 5,
+                    HiveSectionId = 6066,
                     ProductId = 2
                 },
                 new StoreItem // #3
                 {
                     Id = 7,
                     Quantity = 10,
-                    HiveSectionId = 1,
+                    HiveSectionId = 6062,
                     ProductId = 3
                 },
                 new StoreItem
                 {
                     Id = 8,
                     Quantity = 10,
-                    HiveSectionId = 3,
+                    HiveSectionId = 6064,
                     ProductId = 3
                 },
                 new StoreItem
                 {
                     Id = 9,
                     Quantity = 10,
-                    HiveSectionId = 5,
+                    HiveSectionId = 6066,
                     ProductId = 3
                 },
                 new StoreItem // #4
                 {
                     Id = 13,
                     Quantity = 4,
-                    HiveSectionId = 2,
+                    HiveSectionId = 6063,
                     ProductId = 4
                 },
                 new StoreItem
                 {
                     Id = 14,
                     Quantity = 0,
-                    HiveSectionId = 4,
+                    HiveSectionId = 6065,
                     ProductId = 4
                 },
                 new StoreItem
                 {
                     Id = 15,
                     Quantity = 0,
-                    HiveSectionId = 6,
+                    HiveSectionId = 6067,
                     ProductId = 4
                 });
 
